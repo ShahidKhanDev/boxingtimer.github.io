@@ -276,8 +276,8 @@ button {
 }
 
 .countdown__btns button {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
   background-color: var(--charcoal);
   font-size: 1.5rem;
@@ -294,16 +294,12 @@ button {
   position: fixed;
   left: 1rem;
   bottom: 2rem;
-  padding: 0.5rem 1rem;
+  padding: 0.7rem 1rem;
   border-radius: 5px;
   color: var(--yellow);
   background-color: var(--charcoal);
   user-select: none;
   font-weight: 600;
-}
-
-.total__time span {
-  font-weight: normal;
 }
 
 .total__time small {
@@ -410,7 +406,7 @@ button {
 
 @media screen and (max-width: 768px) {
   .total__time {
-    bottom: 7rem;
+    top: 69%;
     right: 1rem;
     background-color: transparent;
     color: var(--charcoal);
@@ -421,5 +417,9 @@ button {
 @media screen and (max-width: 475px) {
   .logo {
     justify-content: center;
+  }
+
+  .btn__save__settings {
+    bottom: 4rem;
   }
 }
