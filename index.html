@@ -1,0 +1,123 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boxing - Timer</title>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="src/css/style.css" />
+
+    <!-- remixicons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <a href="" class="logo"
+        >Boxing <img src="src/images/gloves.png" alt="Boxing Gloves" /> Timer</a
+      >
+    </div>
+
+    <div class="splash__screen">
+      <a href="" class="logo"
+        >Boxing <img src="src/images/gloves.png" alt="Boxing Gloves" /> Timer</a
+      >
+      <div class="developer">
+        <p>Made with <i class="ri-heart-fill"></i> by <b>Shahid.</b></p>
+      </div>
+
+      <!-- <div class="loading">
+        <div class="progressbar">
+          <div class="progressbar__full"></div>
+        </div>
+      </div> -->
+    </div>
+
+    <!-- start -->
+    <div class="start__section">
+      <button class="btn__start">
+        Start
+        <img src="src/images/gloves-3.png" alt="Boxing Gloves" />
+      </button>
+    </div>
+
+    <!-- timer -->
+    <div class="timer__section">
+      <div class="timer__header">
+        <div class="row">
+          <p class="timer__header__title">Set Timer</p>
+        </div>
+        <div class="row">
+          <button class="btn__settings">
+            <i class="ri-settings-2-line"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="timer__cards">
+        <div class="card">
+          <span>Sets</span>
+          <p>6</p>
+        </div>
+        <div class="card">
+          <span>Duration</span>
+          <p>20</p>
+        </div>
+        <div class="card">
+          <span>Rest</span>
+          <p>10</p>
+        </div>
+      </div>
+
+      <div class="countdown">
+        <div class="countdown__time">-:-</div>
+        <i class="ri-timer-line"></i>
+      </div>
+      <div class="countdown__btns">
+        <button class="btn__stop__ctdown">
+          <i class="ri-stop-fill"></i>
+        </button>
+        <button class="btn__start__ctdown" data-playing="false">
+          <i class="ri-play-fill"></i>
+        </button>
+        <button class="btn__reset__ctdown">
+          <i class="ri-restart-fill"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="settings__section">
+      <button class="close__btn close__settings__btn">
+        <i class="ri-close-line"></i>
+      </button>
+      <div class="row">
+        <span>Round Length</span>
+        <div class="input__field">
+          <input type="number" id="startMinutes" value="0" />
+          <small>Minutes</small>
+        </div>
+
+        <div class="input__field">
+          <input type="number" id="startSeconds" value="0" />
+          <small>Seconds</small>
+        </div>
+      </div>
+
+      <button class="btn__save__settings">Save Settings</button>
+    </div>
+
+    <!-- custom js -->
+    <script src="src/js/main.js"></script>
+  </body>
+</html>
