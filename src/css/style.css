@@ -193,7 +193,7 @@ button {
 }
 
 .btn__settings {
-  background-color: var(--ch-green);
+  background-color: var(--charcoal);
   color: var(--yellow);
   width: 2rem;
   height: 2rem;
@@ -204,7 +204,7 @@ button {
 }
 
 .btn__settings:hover {
-  background-color: var(--charcoal);
+  background-color: var(--ch-green);
 }
 
 .timer__cards {
@@ -266,10 +266,9 @@ button {
 
 .countdown__btns {
   width: 100%;
-  position: absolute;
-  bottom: 0;
+  position: fixed;
   left: 0;
-  padding: 2rem 0;
+  bottom: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -280,7 +279,7 @@ button {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
-  background-color: var(--ch-green);
+  background-color: var(--charcoal);
   font-size: 1.5rem;
   color: var(--yellow);
   cursor: pointer;
@@ -288,7 +287,28 @@ button {
 }
 
 .countdown__btns button:hover {
+  background-color: var(--ch-green);
+}
+
+.total__time {
+  position: fixed;
+  left: 1rem;
+  bottom: 2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  color: var(--yellow);
   background-color: var(--charcoal);
+  user-select: none;
+  font-weight: 600;
+}
+
+.total__time span {
+  font-weight: normal;
+}
+
+.total__time small {
+  font-weight: 500;
+  margin-left: 2px;
 }
 
 .settings__section {
@@ -302,14 +322,10 @@ button {
   padding: 1rem;
   padding-top: 5rem;
   transition: transform 0.25s ease-in-out;
-  /* opacity: 0;
-  visibility: hidden; */
 }
 
 .settings__section.active {
   transform: translateY(0);
-  /* opacity: 1;
-  visibility: visible; */
 }
 
 .settings__section .close__btn {
@@ -361,6 +377,10 @@ button {
   margin-bottom: 0.3rem;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .settings__section .row .input__field small {
   font-weight: 600;
   font-size: 0.8rem;
@@ -369,10 +389,10 @@ button {
 
 .btn__save__settings {
   position: fixed;
-  bottom: 3%;
+  bottom: 2rem;
   left: 50%;
   transform: translateX(-50%);
-  background-color: var(--ch-green);
+  background-color: var(--charcoal);
   width: calc(100% - 2rem);
   outline: 2px solid var(--charcoal);
   outline-offset: 3px;
@@ -385,7 +405,17 @@ button {
 }
 
 .btn__save__settings:hover {
-  background-color: var(--charcoal);
+  background-color: var(--ch-green);
+}
+
+@media screen and (max-width: 768px) {
+  .total__time {
+    bottom: 7rem;
+    right: 1rem;
+    background-color: transparent;
+    color: var(--charcoal);
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 475px) {

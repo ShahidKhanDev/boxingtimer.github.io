@@ -67,23 +67,25 @@
 
       <div class="timer__cards">
         <div class="card">
-          <span>Sets</span>
-          <p>6</p>
+          <span>Rounds</span>
+          <p class="total__rounds">-</p>
         </div>
         <div class="card">
-          <span>Duration</span>
-          <p>20</p>
+          <span>Round Time</span>
+          <p class="round__time">-</p>
         </div>
         <div class="card">
-          <span>Rest</span>
-          <p>10</p>
+          <span>Rest Time</span>
+          <p class="rest__time">-</p>
         </div>
       </div>
 
+      <!-- countdown -->
       <div class="countdown">
         <div class="countdown__time">-:-</div>
         <i class="ri-timer-line"></i>
       </div>
+
       <div class="countdown__btns">
         <button class="btn__stop__ctdown">
           <i class="ri-stop-fill"></i>
@@ -95,20 +97,31 @@
           <i class="ri-restart-fill"></i>
         </button>
       </div>
+      <div class="total__time">
+        <span>Total Time:</span> 19<small>mins</small> - 15<small>secs</small>
+      </div>
     </div>
 
     <div class="settings__section">
       <button class="close__btn close__settings__btn">
         <i class="ri-close-line"></i>
       </button>
+
+      <div class="row">
+        <span>Rounds</span>
+        <div class="input__field w-full">
+          <input type="number" id="totalRounds" value="1" />
+        </div>
+      </div>
+
       <div class="row">
         <span>Round Length</span>
-        <div class="input__field">
+        <div class="input__field w-full">
           <input type="number" id="startMinutes" value="0" />
           <small>Minutes</small>
         </div>
 
-        <div class="input__field">
+        <div class="input__field w-full">
           <input type="number" id="startSeconds" value="0" />
           <small>Seconds</small>
         </div>
