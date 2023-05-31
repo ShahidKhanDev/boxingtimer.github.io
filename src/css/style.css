@@ -409,6 +409,7 @@ button {
     top: 69%;
     right: 1rem;
     background-color: transparent;
+    height: max-content;
     color: var(--charcoal);
     text-align: center;
   }
